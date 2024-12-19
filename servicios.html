@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Buscador de Datos Técnicos</title>
+    <link rel="stylesheet" href="stiles.css"> <!-- Enlace a tu hoja de estilos -->
+    <link rel="icon" href="logos/logo.jpeg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .servicio {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .servicio:hover {
+            transform: scale(1.05);
+        }
+
+        .servicio img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .servicio .contenido {
+            padding: 20px;
+        }
+
+        .servicio h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .servicio p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .servicio a {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .servicio a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header"> 
+        <div class="logo">
+            <img src="logos/logo.jpeg" alt="Logo del sitio" height="90" width="auto">
+
+        </div>
+        
+        <h1>Servicios de Buscador de Datos Técnicos</h1>
+        <p>Conoce todos los servicios que ofrecemos para facilitar tu acceso a información técnica.</p> 
+    </header>
+    <a href="index.html" class="boton">Inicio</a>
+    <!-- Sección de servicios -->
+    <section class="servicios">
+        <!-- Servicio 1 -->
+        <div class="servicio">
+            <img src="logos/t.jpeg" alt="Servicio 1">
+            <div class="contenido">
+                <h3>Consultoría Técnica</h3>
+                <p>Ofrecemos consultoría técnica personalizada para ayudarte a resolver problemas complejos en tu área de trabajo.</p>
+                <a href="#">Más Información</a>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="servicio">
+            <img src="logos/d.jpg" alt="Servicio 2">
+            <div class="contenido">
+                <h3>Desarrollo de Soluciones</h3>
+                <p>Desarrollamos soluciones a medida para mejorar la eficiencia y productividad de tu equipo mediante el uso de herramientas tecnológicas.</p>
+                <a href="#">Más Información</a>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="servicio">
+            <img src="logos/s.jpg" alt="Servicio 3">
+            <div class="contenido">
+                <h3>Soporte y Mantenimiento</h3>
+                <p>Brindamos soporte técnico constante para el mantenimiento y actualización de tus sistemas y equipos.</p>
+                <a href="#">Más Información</a>
+            </div>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="servicio">
+            <img src="logos/c.jpg" alt="Servicio 4">
+            <div class="contenido">
+                <h3>Capacitación Técnica</h3>
+                <p>Ofrecemos cursos de formación técnica para que tu equipo se mantenga actualizado en las últimas herramientas y tecnologías del sector.</p>
+                <a href="#">Más Información</a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
