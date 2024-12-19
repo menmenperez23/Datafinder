@@ -1,0 +1,158 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Color de fondo general */
+    color: #333;
+}
+
+/* Menú con imagen de fondo */
+header {
+    background-image: url('logos/logo.jpeg'); /* Imagen del logo */
+    background-size: cover; /* Ajusta para cubrir el espacio */
+    background-repeat: no-repeat; /* No repetir */
+    background-position: center; /* Centra la imagen */
+    height: 100px; /* Altura del menú */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Estilo para el menú de navegación */
+/* Estilo para el contenedor del menú de navegación */
+header nav {
+    display: flex; /* Utilizamos flexbox para la alineación */
+    justify-content: center; /* Centra el menú horizontalmente */
+    align-items: center; /* Alinea el menú verticalmente si es necesario */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
+}
+
+/* Estilo para el menú (eliminamos los márgenes y padding predeterminados) */
+nav ul {
+    list-style-type: none; /* Elimina el estilo de lista predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el espacio interno */
+}
+
+/* Estilo para cada ítem del menú */
+nav ul li {
+    display: inline-block; /* Los elementos se alinean horizontalmente */
+    margin: 0 15px; /* Espacio entre los elementos */
+}
+
+/* Estilo para los enlaces del menú */
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #6c99d3; /* Color de los enlaces */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    padding: 10px 15px; /* Espacio interno en los enlaces */
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el ratón */
+}
+
+/* Cambio de color al pasar el ratón por encima */
+nav ul li a:hover {
+    background-color: #007BFF; /* Color de fondo cuando el ratón está encima */
+    color: white; /* Cambia el color del texto al pasar el ratón */
+}
+
+
+/* Sección de inicio */
+section#inicio {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section#inicio h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+section#inicio p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+section#inicio img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para la lista centrada */
+.lista-centrada {
+    padding: 0; /* Elimina el espacio extra del padding */
+    margin: 0 auto; /* Elimina el margen superior e inferior y centra la lista */
+    list-style: none; /* Elimina los estilos predeterminados */
+    text-align: center; /* Centra el texto de la lista */
+    max-width: 600px; /* Opcional: Limita el ancho máximo para que no se extienda demasiado */
+}
+
+.lista-centrada li {
+    margin-bottom: 5px; /* Reduce el espaciado entre elementos */
+    font-size: 16px; 
+    line-height: 1.3; /* Reduce el espaciado entre líneas */
+    position: relative; /* Permite posicionar íconos */
+    padding-left: 20px; /* Espacio para el ícono */
+}
+
+/* Agregar el ícono de verificación antes de cada elemento */
+.lista-centrada li::before {
+    content: "✅"; /* El símbolo */
+    position: absolute;
+    left: 0; /* Coloca el ícono a la izquierda */
+    color: #007BFF; /* Color azul para el ícono */
+    font-size: 18px; /* Tamaño del ícono */
+}
+
+
+/* Botón personalizado */
+.boton {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Azul llamativo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Bloque de testimonios */
+blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-left: 5px solid #007BFF; /* Línea azul al lado */
+    background-color: #f9f9f9;
+    color: #555;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario: Evaluación de Servicios - Parte 4</title>
+    <link rel="stylesheet" href="stiles.css"> <!-- Enlace a tu hoja de estilos -->
+    <link rel="icon" href="logos/logo.jpeg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contenedor {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .pregunta {
+            margin-bottom: 20px;
+        }
+
+        .pregunta h3 {
+            font-size: 20px;
+            color: #2c3e50;
+        }
+
+        .opciones input {
+            margin-right: 10px;
+        }
+
+        .boton {
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .boton:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="logos/logo.jpeg" alt="Logo del sitio" height="90" width="auto">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="cuestionarios.html">Cuestionarios</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cuestionario -->
+    <section id="cuestionario">
+        <h1 style="text-align: center;">Cuestionario: Evaluación de Servicios - Parte 4</h1>
+
+        <div class="contenedor">
+            <!-- Pregunta 13 -->
+            <div class="pregunta">
+                <h3>1. ¿Qué tan útil ha sido la atención al cliente en tu experiencia?</h3>
+                <div class="opciones">
+                    <input type="radio" id="opcion38" name="pregunta13" value="A">
+                    <label for="opcion38">A) Muy útil</label><br>
+                    <input type="radio" id="opcion39" name="pregunta13" value="B">
+                    <label for="opcion39">B) Útil</label><br>
+                    <input type="radio" id="opcion40" name="pregunta13" value="C">
+                    <label for="opcion40">C) Poco útil</label><br>
+                    <input type="radio" id="opcion41" name="pregunta13" value="D">
+                    <label for="opcion41">D) Nada útil</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 14 -->
+            <div class="pregunta">
+                <h3>2. ¿Qué tan satisfecho estás con la calidad de los productos o servicios ofrecidos?</h3>
+                <div class="opciones">
+                    <input type="radio" id="opcion42" name="pregunta14" value="A">
+                    <label for="opcion42">A) Muy satisfecho</label><br>
+                    <input type="radio" id="opcion43" name="pregunta14" value="B">
+                    <label for="opcion43">B) Satisfecho</label><br>
+                    <input type="radio" id="opcion44" name="pregunta14" value="C">
+                    <label for="opcion44">C) Insatisfecho</label><br>
+                    <input type="radio" id="opcion45" name="pregunta14" value="D">
+                    <label for="opcion45">D) Muy insatisfecho</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 15 -->
+            <div class="pregunta">
+                <h3>3. ¿Consideras que el precio es justo para el servicio recibido?</h3>
+                <div class="opciones">
+                    <input type="radio" id="opcion46" name="pregunta15" value="A">
+                    <label for="opcion46">A) Sí, totalmente justo</label><br>
+                    <input type="radio" id="opcion47" name="pregunta15" value="B">
+                    <label for="opcion47">B) Algo justo</label><br>
+                    <input type="radio" id="opcion48" name="pregunta15" value="C">
+                    <label for="opcion48">C) No muy justo</label><br>
+                    <input type="radio" id="opcion49" name="pregunta15" value="D">
+                    <label for="opcion49">D) No, para nada justo</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 16 -->
+            <div class="pregunta">
+                <h3>4. ¿Hay algún aspecto del servicio que crees que se podría mejorar?</h3>
+                <div class="opciones">
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea>
+                </div>
+            </div>
+
+            <a href="agradecimiento.html" class="boton">Enviar</a> <!-- Redirige al siguiente cuestionario -->
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Buscador de Datos Técnicos. <a href="autor.html">Todos los derechos reservados.</a></p>
+    </footer>
+</body>
+</body>
+</html>
