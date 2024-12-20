@@ -9,7 +9,7 @@ body {
 
 /* Menú con imagen de fondo */
 header {
-    background-image: url('logos/logo.jpeg'); /* Imagen del logo */
+    background-image: url('logos/lo.jpeg'); /* Imagen del logo */
     background-size: cover; /* Ajusta para cubrir el espacio */
     background-repeat: no-repeat; /* No repetir */
     background-position: center; /* Centra la imagen */
