@@ -3,52 +3,54 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Color de fondo general */
+    background-color: #f4f4f4;
     color: #333;
 }
 
 /* Menú con imagen de fondo */
 header {
-    background-image: url('logos/lo.jpeg'); /* Imagen del logo */
-    background-size: cover; /* Ajusta para cubrir el espacio */
-    background-repeat: no-repeat; /* No repetir */
-    background-position: center; /* Centra la imagen */
-    height: 100px; /* Altura del menú */
+    background-image: url('logos/lo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
     display: flex;
     align-items: center;
     padding: 0 20px;
 }
 
-/* Estilo para el menú de navegación */
+/* Menú de navegación */
 header nav {
-    display: flex; /* Utilizamos flexbox para la alineación */
-    justify-content: center; /* Centra el menú horizontalmente */
-    align-items: center; /* Alinea el menú verticalmente si es necesario */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
-    list-style-type: none; /* Elimina el estilo de lista predeterminado */
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el espacio interno */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los ítems se ajusten en varias líneas */
 }
 
 nav ul li {
-    display: inline-block; /* Los elementos se alinean horizontalmente */
-    margin: 0 15px; /* Espacio entre los elementos */
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #002D62; /* Azul bandera dominicana */
-    font-size: 18px; /* Tamaño de fuente de los enlaces */
-    padding: 10px 15px; /* Espacio interno en los enlaces */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el ratón */
+    text-decoration: none;
+    color: #002D62;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #EF3340; /* Rojo bandera dominicana */
-    color: white; /* Cambia el color del texto al pasar el ratón */
+    background-color: #EF3340;
+    color: white;
 }
 
 /* Sección de inicio */
@@ -56,14 +58,14 @@ section#inicio {
     text-align: center;
     padding: 40px 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     border-radius: 10px;
 }
 
 section#inicio h1 {
     font-size: 2.5em;
-    color: #002D62; /* Azul bandera dominicana */
+    color: #002D62;
     margin-bottom: 10px;
 }
 
@@ -79,37 +81,12 @@ section#inicio img {
     border-radius: 10px;
 }
 
-/* Lista centrada con íconos */
-.lista-centrada {
-    padding: 0;
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-    max-width: 600px;
-}
-
-.lista-centrada li {
-    margin-bottom: 5px;
-    font-size: 16px;
-    line-height: 1.3;
-    position: relative;
-    padding-left: 20px;
-}
-
-.lista-centrada li::before {
-    content: "\2713"; /* Código Unicode para una marca de verificación */
-    position: absolute;
-    left: 0;
-    color: #007BFF; /* Color azul para el ícono */
-    font-size: 18px;
-}
-
 /* Botón personalizado */
 .boton {
     display: inline-block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #002D62; /* Azul bandera dominicana */
+    background-color: #002D62;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -118,7 +95,7 @@ section#inicio img {
 }
 
 .boton:hover {
-    background-color: #EF3340; /* Rojo bandera dominicana */
+    background-color: #EF3340;
 }
 
 /* Bloque de testimonios */
@@ -126,7 +103,7 @@ blockquote {
     font-style: italic;
     margin: 20px auto;
     padding: 10px 20px;
-    border-left: 5px solid #EF3340; /* Línea roja bandera dominicana */
+    border-left: 5px solid #EF3340;
     background-color: #f9f9f9;
     color: #555;
     max-width: 600px;
@@ -144,16 +121,20 @@ cite {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #002D62; /* Azul bandera dominicana */
+    background-color: #002D62;
     color: white;
     font-size: 0.9em;
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia los elementos del menú a columna */
+        align-items: center; /* Centra los ítems en la columna */
+    }
+
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        margin: 10px 0; /* Espaciado vertical entre ítems */
     }
 
     nav ul li a {
@@ -172,5 +153,19 @@ footer {
 
     .boton {
         padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 80px; /* Ajusta la altura en pantallas más pequeñas */
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    section#inicio h1 {
+        font-size: 1.8em;
     }
 }
