@@ -5,7 +5,7 @@ Una herramienta para buscar cursos gratis, empleos, solares, documentos académi
 Descarga el ejecutable para Windows aquí: [datafinder.exe](https://drive.google.com/drive/my-drive)
 
 ## Capturas de pantalla
-![Soporte TI](soporte_ti.png)
+![Soporte TI](soporte_1.png)
 
 ## Instalación (para usuarios avanzados)
 Si prefieres usar el código fuente:
