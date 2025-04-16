@@ -5,7 +5,7 @@
     padding: 0;
 }
 body {
-    background-color: #f9fafb;
+    background: linear-gradient(135deg, #003087 0%, #FFFFFF 50%, #CE1126 100%);
     margin: 0;
 }
 .font-poppins {
@@ -19,23 +19,25 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-/* Colores personalizados */
-.bg-primary { background-color: #1d4ed8; }
-.bg-light { background-color: #f9fafb; }
+/* Colores personalizados - Tema bandera dominicana */
+.bg-primary { background-color: #003087; } /* Azul de la bandera */
+.bg-light { background: linear-gradient(135deg, #003087 0%, #FFFFFF 50%, #CE1126 100%); }
 .bg-dark { background-color: #111827; }
-.bg-white { background-color: #ffffff; }
-.bg-success-light { background-color: #ecfdf5; }
-.bg-success { color: #047857; }
-.bg-warning-light { background-color: #fef2f2; }
-.bg-warning { color: #b91c1c; }
-.bg-accent { background-color: #ef4444; }
-.bg-accent-dark { background-color: #dc2626; }
-.text-white { color: #ffffff; }
+.bg-white { background-color: #FFFFFF; } /* Blanco de la bandera */
+.bg-success-light { background-color: #e6f0fa; } /* Azul claro pa’ beneficios */
+.bg-success { color: #003087; } /* Texto azul */
+.bg-warning-light { background-color: #fce4e4; } /* Rojo claro pa’ desventajas */
+.bg-warning { color: #CE1126; } /* Texto rojo */
+.bg-accent { background-color: #CE1126; } /* Rojo de la bandera pa’l botón */
+.bg-accent-dark { background-color: #b91c1c; } /* Rojo más oscuro al pasar el mouse */
+.border-primary { border-color: #003087; } /* Borde azul */
+.border-accent { border-color: #CE1126; } /* Borde rojo */
+.text-white { color: #FFFFFF; } /* Blanco de la bandera */
 .text-gray-600 { color: #4b5563; }
 .text-gray-700 { color: #374151; }
 .text-dark { color: #1f2937; }
-.text-accent { color: #ef4444; }
-.text-accent-dark { color: #dc2626; }
+.text-accent { color: #CE1126; } /* Texto rojo */
+.text-accent-dark { color: #b91c1c; }
 .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
 .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
 .text-2xl { font-size: 1.5rem; line-height: 2rem; }
@@ -50,10 +52,15 @@ body {
 .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
 .px-4 { padding-left: 1rem; padding-right: 1rem; }
 .mx-4 { margin-left: 1rem; margin-right: 1rem; }
+.p-4 { padding: 1rem; }
 .px-8 { padding-left: 2rem; padding-right: 2rem; }
 .mt-2 { margin-top: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.mt-3 { margin-top: 0.75rem; }
 .mb-4 { margin-bottom: 1rem; }
+.mt-4 { margin-top: 1rem; }
 .mb-6 { margin-bottom: 1.5rem; }
+.mt-6 { margin-top: 1.5rem; }
 .mb-16 { margin-bottom: 4rem; }
 .text-center { text-align: center; }
 .rounded-xl { border-radius: 0.75rem; }
@@ -61,17 +68,20 @@ body {
 .rounded-full { border-radius: 9999px; }
 .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
 .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+.border { border-width: 2px; } /* Borde más grueso pa’ que resalte */
 .list-decimal { list-style-type: decimal; }
 .list-disc { list-style-type: disc; }
 .list-inside { list-style-position: inside; }
-.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-1 > * + * { margin-top: 0.25rem; }
 .inline-block { display: inline-block; }
-.hover\:bg-accent-dark:hover { background-color: #dc2626; }
-.hover\:text-accent:hover { color: #ef4444; }
+.hover\:bg-accent-dark:hover { background-color: #b91c1c; }
+.hover\:text-accent:hover { color: #CE1126; }
 .transition { transition: all 0.3s ease; }
 .grid { display: grid; }
 .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
-.gap-8 { gap: 2rem; }
+.gap-6 { gap: 1.5rem; }
+.max-w-xl { max-width: 36rem; } /* 576px */
+.mx-auto { margin-left: auto; margin-right: auto; }
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
 .items-center { align-items: center; }
