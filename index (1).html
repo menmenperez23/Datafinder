@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataFinder 2.0 - ¡Busca como Rey Dominicano!</title>
     <style>
-        /* Tailwind CSS mínimo integrado (solo lo necesario pa’ este diseño) */
+        /* Tailwind CSS mínimo integrado */
         *, ::before, ::after {
             box-sizing: border-box;
             margin: 0;
@@ -108,6 +108,24 @@
                 max-width: 400px;
             }
         }
+        /* Estilos pa’ el video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-bottom: 3rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -137,6 +155,17 @@
                     <img src="5.JPG" alt="Pestaña de soporte TI en DataFinder">
                     <p class="text-sm text-gray-600 mt-2">Soporte TI pa’ incidencias</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Anuncio de DataFinder 2.0</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/4-_9hCEIt9w" 
+                        title="Anuncio de DataFinder 2.0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
             </div>
         </section>
 
