@@ -1,0 +1,142 @@
+/* Estilos modernos y hermosos */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f9fafb;
+    margin: 0;
+}
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* Colores personalizados */
+.bg-primary { background-color: #1d4ed8; }
+.bg-light { background-color: #f9fafb; }
+.bg-dark { background-color: #111827; }
+.bg-white { background-color: #ffffff; }
+.bg-success-light { background-color: #ecfdf5; }
+.bg-success { color: #047857; }
+.bg-warning-light { background-color: #fef2f2; }
+.bg-warning { color: #b91c1c; }
+.bg-accent { background-color: #ef4444; }
+.bg-accent-dark { background-color: #dc2626; }
+.text-white { color: #ffffff; }
+.text-gray-600 { color: #4b5563; }
+.text-gray-700 { color: #374151; }
+.text-dark { color: #1f2937; }
+.text-accent { color: #ef4444; }
+.text-accent-dark { color: #dc2626; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-16 { margin-bottom: 4rem; }
+.text-center { text-align: center; }
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-full { border-radius: 9999px; }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+.list-decimal { list-style-type: decimal; }
+.list-disc { list-style-type: disc; }
+.list-inside { list-style-position: inside; }
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.inline-block { display: inline-block; }
+.hover\:bg-accent-dark:hover { background-color: #dc2626; }
+.hover\:text-accent:hover { color: #ef4444; }
+.transition { transition: all 0.3s ease; }
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.gap-8 { gap: 2rem; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+@media (min-width: 768px) {
+    .md\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+    .md\:text-3xl { font-size: 1.5rem; line-height: 2rem; }
+    .md\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+    .md\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+    .md\:text-base { font-size: 1rem; line-height: 1.5rem; }
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* Estilos pa’ la galería */
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+.gallery-item {
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery img {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 0.75rem;
+    scroll-snap-align: start;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery img {
+        max-width: 400px;
+    }
+}
+/* Estilos pa’ el video */
+.video-container {
+    position: relative;
+    padding-bottom: 30.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 80%;
+    margin: 0 auto 4rem;
+    background: #000;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+    .video-container {
+        max-width: 500px;
+    }
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0.75rem;
+}
